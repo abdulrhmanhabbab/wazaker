@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/log.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Watheker</title>
+  </head>
+  <body>
+    <header>
+      <h2><a href="#home" class="logo">Wathaker</a></h2>
+      <ul>
+        <li><a href="#home" class="act" data-i18n="navHome">Home</a></li>
+        <li><a href="#about" data-i18n="navAbout">About</a></li>
+        <li><a href="#book" data-i18n="navBooks">Books</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+        <li><button class="lang-toggle" type="button" data-language-toggle>AR</button></li>
+      </ul>
+    </header>
+    <section class="main" id="home">
+      <img src="img/book.png" id="book1" alt="" />
+      <img src="img/book.png" id="book2" alt="" />
+      <img src="img/log.png" id="logo" alt="" />
+      <img src="img/olive1.png" id="top-olive" alt="" />
+      <img src="img/olive1.png" id="bottom-olive" alt="" />
+    </section>
+    <main>
+      <section id="about" class="about-section">
+        <div class="about-heading">
+          <span class="about-label" data-i18n="aboutLabel">About Wathaker</span>
+          <h2 class="about-title" data-i18n="aboutTitle">
+            Faith-aware content for the questions of everyday life.
+          </h2>
+        </div>
+
+        <p class="about-text" data-i18n="aboutText">
+          Wathaker creates reflective Islamic content and digital books about
+          modern personal and social issues, such as phone addiction, daily
+          pressure, and how Muslims can think about wars and conflicts they are
+          not directly part of. The focus is awareness, behavior, and meaning,
+          not traditional books of legal rulings about prayer, fasting, or
+          similar topics.
+        </p>
+      </section>
+    </main>
+    <section class="book" id="book">
+      <span class="small-title" data-i18n="popularBooks">Popular books</span>
+
+      <div class="book-grid">
+        <article class="book-card">
+          <div>
+            <h3 data-i18n="fetnahTitle">Surviving in times of chaos.</h3>
+            <p data-i18n="fetnahDesc">
+              A Muslim's guide to dealing with wars they're not involved in.
+            </p>
+            <p><a href="books_pages/fetnah.html" data-i18n="seeMore">see more info</a></p>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div>
+            <h3 data-i18n="gazaTitle">Don't just stand by and watch.</h3>
+            <p data-i18n="gazaDesc">
+              A young Muslim's guide to navigating the Palestinian cause and the
+              war in Gaza.
+            </p>
+            <p><a href="books_pages/gaza.html" data-i18n="seeMore">see more info</a></p>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div>
+            <h3 data-i18n="brainrotTitle">When Life Slips Away</h3>
+            <p data-i18n="brainrotDesc">
+              A Muslim's guide to breaking phone addiction and beating brain
+              rot.
+            </p>
+            <p><a href="books_pages/brainrot.html" data-i18n="seeMore">see more info</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <article class="book-card contact-card">
+        <div>
+          <h2 data-i18n="contactTitle">Contact Us</h2>
+          <p data-i18n="contactText">Have questions or feedback? We'd love to hear from you!</p>
+        </div>
+
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://www.instagram.com/wazaker_iman?utm_source=qr&igsh=ODM2MTJraXB1NGx4" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/wathaker.iman" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://youtube.com/@user-zz3hb2mn7e?si=3hh4Iv7lxDPbtGte" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </article>
+    </section>
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
